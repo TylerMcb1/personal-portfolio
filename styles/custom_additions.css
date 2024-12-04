@@ -10,17 +10,17 @@ good luck!
 */
 
 body {
-    background-color: #f4ebd5;
+    background-color: #ffffff;
 }
 
 .button {
-    background-color: #dfd2b3; 
-    border-color: #726547;
+    background-color: #696969; 
+    border-color: #000000;
     border-radius: 10px;
 }
 
 .button:hover {
-    background-color: #8d8164; 
+    background-color: #484848; 
 }
 
 button:active,button:focus {
@@ -40,13 +40,3 @@ button:active,button:focus {
 .site-content {
     padding: 25px 0
 }
-
-/* 
-
-.css-class {
-    attribute: value(s)
-} 
-
-... if this doesn't make sense go learn how css works first!
-
-*/
