@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #f9f9f9;
+    background-color: #121212;
+    cursor: none; /* Hide the default cursor */
+    position: relative;
+}
+  
+h1, h2, h3 {
+    color: #f9f9f9;
+    margin: 0; /* Remove default margin */
+}
+  
+a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+
+/* Custom Cursor */
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(30, 144, 255, 0.4);
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transition: transform 0.15s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.4), 0 0 10px rgba(30, 144, 255, 0.4), 0 0 20px rgba(30, 144, 255, 0.4), 0 0 30px rgba(30, 144, 255, 0.4);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 10px;
+    background: url('Hero-uchicago-campus.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0s;
+}
+  
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+  
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+  
+.profile-picture {
+    width: 100px; /* Reduced size */
+    height: 100px; /* Reduced size */
+    border-radius: 50%;
+    margin-bottom: 10px; /* Space between picture and name */
+}
+  
+.profile-info {
+    text-align: center;
+}
+  
+.contact-info {
+    margin: 5px 0; /* Reduce spacing */
+}
+  
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+  
+.social-links a {
+    font-weight: bold;
+}
+  
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+  
+section {
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+section:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+  
+section:nth-of-type(2) {
+    animation-delay: 1s;
+}
+  
+section:nth-of-type(3) {
+    animation-delay: 1.5s;
+}
+  
+section:nth-of-type(4) {
+    animation-delay: 2s;
+}
+
+section h2 {
+    border-bottom: 2px solid #1E90FF;
+    display: inline-block;
+    margin-bottom: 20px; /* Add spacing below titles */
+}
+  
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+  
+.skill-item {
+    background: #1e1e1e;
+    color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.experience-section, .projects-section, .organizations-section {
+    background: #1e1e1e;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+  
+.experience-item, .project-item, .organization-item {
+    background: #2a2a2a;
+    padding: 10px 20px; /* Adjusted left padding */
+    margin-bottom: 10px; /* Reduced top and bottom margin */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: var(--animation-delay);
+}
+  
+.experience-item p, .project-item p, .organization-item p {
+    margin: 5px 0; /* Reduce spacing between lines */
+}
+  
+.experience-item:last-child, .project-item:last-child, .organization-item:last-child {
+    margin-bottom: 0;
+}
+  
+.project-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1E90FF;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+  
+.hidden.animated {
+    opacity: 1;
+}
+  
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1.5s;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animation Delay for Each Item */
+.experience-item:nth-child(1) {
+    --animation-delay: 1.2s;
+}
+.experience-item:nth-child(2) {
+    --animation-delay: 1.4s;
+}
+.experience-item:nth-child(3) {
+    --animation-delay: 1.6s;
+}
+.experience-item:nth-child(4) {
+    --animation-delay: 1.8s;
+}
+.experience-item:nth-child(5) {
+    --animation-delay: 2s;
+}
+.project-item:nth-child(1) {
+    --animation-delay: 1.7s;
+}
+.organization-item:nth-child(1) {
+    --animation-delay: 2.2s;
+}
+.organization-item:nth-child(2) {
+    --animation-delay: 2.4s;
+}
+.organization-item:nth-child(3) {
+    --animation-delay: 2.6s;
+}
+.organization-item:nth-child(4) {
+    --animation-delay: 2.8s;
+}

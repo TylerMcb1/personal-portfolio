@@ -1,89 +1,123 @@
-<!-- This is the location from which the webpage will be served. 
-Start here to edit personal info and move onto styling afterwards -->
-
-<!-- To preview the site before pushing, we host on local. I personally
-use: https://www.npmjs.com/package/http-server -->
-
 <!DOCTYPE html>
-<html lang="en-US" class="no-js no-svg"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles/default_style.css" />
-	<link rel="stylesheet" type="text/css" href="styles/custom_additions.css" />
-    <script src="script.js" defer></script>
-	<!-- ADD A CUSTOM IMAGE HERE -->
-    <link rel="icon" href="images/algo_group_logo.jpg">
-	<title>Algo Group Template</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <header>
+    <div class="profile-container">
+      <img src="IMG_3855.JPG" alt="Profile Picture" class="profile-picture">
+      <h1>Tyler McBride</h1>
+      <p class="contact-info">tylermcbride@uchicago.edu | (310) 863-9977</p>
+      <div class="social-links">
+        <a href="https://github.com/TylerMcb1" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/tyler-mcbride-98847b1aa/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section id="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">React</div>
+          <div class="skill-item">Java</div>
+          <div class="skill-item">Spring Boot</div>
+          <div class="skill-item">SQL</div>
+          <div class="skill-item">Azure</div>
+          <div class="skill-item">HTML</div>
+          <div class="skill-item">CSS</div>
+          <div class="skill-item">Git</div>
+          <div class="skill-item">Docker</div>
+        </div>
+      </section>
 
-<!-- COMMENT THIS BLOCK OUT -->
+    <section id="experience-section">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Software Engineer Intern</h3>
+        <p>Site Service Software | August 2024 - December 2024</p>
+        <p>• Convert on-premise software to cloud architecture hosted by Microsoft Azure using React JavaScript and Java Spring Boot framework<br>
+        • Handle Standard Query Language (SQL) operations and database management with Microsoft SQL Server<br>
+        • Collaborate with the development team to design and implement cloud-based solutions<br>
+        • Participate in code reviews and contribute to the improvement of Site Service's development processes</p>
+      </div>
+      <div class="experience-item">
+        <h3>Salesforce Intern</h3>
+        <p>Banc of California | June 2024 - August 2024</p>
+        <p>• Performed User Acceptance Testing (UAT) on new cloud-based integrated Salesforce platform using Agile development methodology<br>
+        • Supported project management team by identifying User Interface (UI) bugs and potential system improvements<br>
+        • Coordinated with cross-functional teams and ensured efficient and high-quality product delivery through Jira<br>
+        • Validated data of 8,000 accounts using Excel in data conversion project for $40 billion merger with Pacific Western Bank<br>
+        • Wrote test scripts through new Online Digital Banking (D1B) platform for Fidelity National Information Service (FIS) Banking Service</p>
+      </div>
+      <div class="experience-item">
+        <h3>AI Software Consultant</h3>
+        <p>Outlier AI | February 2024 - June 2024</p>
+        <p>• Performed Quality Assurance (QA) testing on generative Artificial Intelligence (AI) responses for the Dolphin Genesis model<br>
+        • Wrote efficient algorithms using backend programming languages of Java, Python, and C for generative model debugging<br>
+        • Analyzed generated Standard Query Language (SQL) queries for optimized database performance in Flamingo Deviations SQL Project</p>
+      </div>
+      <div class="experience-item">
+        <h3>Student Research Assistant</h3>
+        <p>The Univeristy of Chicago | March 2023 - March 2024</p>
+        <p>• Managed a fleet of 12 Virtual Reality (VR) Oculus Headsets for use in college-level foreign language classes<br>
+        • Researched and organized information on several VR Mobile Device Management (MDM) software solutions and Immerse.com<br>
+        • Edited VR Videos using Premiere Pro and uploaded videos using Android file transfer for Oculus Operating System (OS)</p>
+      </div>
+    </section>
+    
+    <section id="project-section">
+      <h2>Projects</h2>
+      <div class="project-item">
+        <a href="https://www.coloradoriverdata.com/"><h3>Colorado River Basin Database</h3></a>
+        <p>• Cohesive platform to find data on the Colorado River Basin and all its major reservoirs, including atmospheric and water data<br>
+        • Cloud-hosted MERN-stack application hosted via AWS Amplify for frontend service and AWS Elastic Beanstalk for backend service.</p>
+        <a href="https://github.com/TylerMcb1/lake-powell-database" target="_blank">View Project on GitHub</a>
+      </div>
+    </section>
+    
+    <section id="organization-section">
+        <h2>Organizations</h2>
+        <div class="organization-item">
+          <h3>Member</h3>
+          <p>Algo Group | Ocotber 2024 - Present</p>
+          <p>• Develop cutting-edge software engineering projects to bridge academia with latest industry trends<br>
+          • Engage in technical interview preparation courses to master key data structures and algorithms as well as optimizations techniques</p>
+        </div>
+        <div class="organization-item">
+          <h3>Varsity Athlete</h3>
+          <p>University of Chicago Football | August 2022 - March 2024</p>
+          <p>• 2022-2023 Midwest Conference All-Academic<br>
+            • Participated in team-sponsored Hyde Park Institute counseling which instillsthe values of leadership and character into young men</p>
+        </div>
+        <div class="organization-item">
+            <h3>Co-founder</h3>
+            <p>Computers for Kids | July 2021 - July 2023</p>
+            <p>• Sought donations of high-powered, recycled corporate computers to donate to students in need<br>
+                • Led operation of collecting, refurbishing, cleaning, and installing new hardware and operating system onto collected computers<br>
+                • Donated over 20 computers to students in low-income communities while avoiding significant electronic wast</p>
+          </div>
+      </section>
+  </main>
+  
+  <footer>
+    <p>© 2024 Tyler McBride. All rights reserved.</p>
+  </footer>
 
-<body class="home page-template-default page page-id-6">
-<div id="page" class="site">
+  <script>
+    document.addEventListener('mousemove', function(e) {
+      var cursor = document.getElementById('cursor');
+      cursor.style.left = e.pageX + 'px';
+      cursor.style.top = e.pageY + 'px';
+    });
 
-<div class="fade-in-image">
-
-<div class="portfolio-title-section">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3"></div>
-			<div class="col-md-6"><div class="title-wrap"><h2>Tyler McBride</h2></div></div>
-			<div class="col-md-3"></div>
-		</div>
-	</div>
-</div>
-
-<div id="content" class="site-content">
-<div class="container">
-<div class="row">
-<div class="col-lg-12">
-<div id="primary" class="content-area">
-<main id="main" class="site-main">
-<article id="post-6" class="post-6 page type-page status-publish hentry">
-
-<!-- BUTTONS ARE BELOW, EDIT LINKS AND SUCH HERE -->
-<div class="entry-content">
-<div class="btn-group">
-
-	<!-- RESUME BUTTON -->
-	<button title="Resume" onmouseover="hover('resume')" onmouseout="gone('resume')"
-	onclick="window.open('./resume.pdf', '_blank')" 
-	class="button button5" style="width:175px;height:140px;">
-		<img id="resume" src="images/resume-colored.png" alt="GitHub" style="width:50px;height:50px;">
-	</button>
-
-	<!-- EMAIL BUTTON -->
-	<button title="Mail" onmouseover="hover('mail')" onmouseout="gone('mail')" 
-	onclick="window.open('mailto:tylermcbride@uchicago.edu', '_blank')" 
-	class="button button5" style="width:175px;height:140px;"> 
-		<img id="mail" src="images/mail-colored.png" alt="CV" style="width:50px;height:50px;">
-	</button>
-
-</div>
-<div class="btn-group">
-
-	<!-- LINKEDIN BUTTON -->
-	<button title="LinkedIn" onmouseover="hover('linkedin')" onmouseout="gone('linkedin')" 
-	onclick="window.open('https://www.linkedin.com/in/tyler-mcbride-98847b1aa/', '_blank')" 
-	class="button button5" style="width:175px;height:140px;">
-		<img id="linkedin" src="images/linkedin-colored.png" class="" alt="GitHub" style="width:24px;height:24px;">
-	</button>
-
-	<!-- GITHUB BUTTON -->
-	<button title="GitHub" onmouseover="hover('github')" onmouseout="gone('github')" 
-	onclick="window.open('https://github.com/TylerMcb1', '_blank')" 
-	class="button button5" style="width:175px;height:140px;">
-		<img id="github" src="images/github-colored.png" class="github-icon" alt="GitHub" style="width:50px;height:50px;">
-	</button>
-
-</div>
-</div>
-</div>
-</article>
-</main>
-</div>
-</div>
-</div>
-</div>
-</div>
-					
+  </script>
+  </script>  
+</body>
+</html>
